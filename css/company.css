@@ -1,0 +1,197 @@
+*{
+	font-family: "Comic Sans MS";
+}
+.navbar-default{
+	z-index: 2;
+}
+.imgback {
+	position: relative;
+	margin-top: -200px;
+	width: 100%;
+	height: auto;
+}
+.ui-main-top-text{
+	position: relative;
+	width: 575px;
+	height: 275px;
+	background: #333333;
+	background-color: rgba(0,0,0,0.5);
+	margin-top: -450px;
+	margin-left: 100px;
+	margin-bottom: 175px;
+	font-size: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	opacity: 1;
+}
+.ui-main-top-text div{
+	color: white;
+	display: flex;
+}
+.ui-main-top-text-head{
+	font-size: 50px;
+}
+@media (max-width: 968px) {
+	.ui-main-top-text{
+		margin-top: 0px;
+		margin-left: 0px;
+		margin-bottom: 0px;
+		width: 100%;
+		background: #333333;
+		text-align: center;
+	}
+}
+@media (max-width: 430px) {
+	.ui-main-top-text div{
+		width: 430px;
+	}
+	img{
+		width: 430px;
+	}
+	.ui-main-imf{
+		width: 430px;
+	}
+	.ui-main-foot{
+		width: 430px;
+	}
+}
+.ui-main-imf{
+	height: 180px;
+	display: flex;
+	flex-flow: wrap;
+}
+.ui-main-imf-eve{
+	width: 25%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	opacity: 1;
+}
+.ui-main-imf-eve-head{
+	margin-top: 40px;
+	margin-left: 40px;
+	border-top: 20px;
+	font-size: 30px;
+	display: flex;
+}
+.ui-main-imf-eve-head a{
+	color: black;
+}
+.fa-angle-right{
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.ui-main-imf-eve-body{
+	margin-left: 40px;
+}
+@media (max-width: 980px) {
+	.ui-main-imf{
+		height: 320px;
+	}
+	.ui-main-imf-eve{
+		width: 50%;
+		height: 50%;
+		display: flex;
+		flex-direction: column;
+	}
+}
+@media (max-width: 500px) {
+	.ui-main-imf{
+		height: 400px;
+	}
+	.ui-main-imf-eve{
+		width: 100%;
+		height: 25%;
+		display: flex;
+		flex-direction: column;
+	}
+	.ui-main-imf-eve-head{
+		margin-top: 10px;
+	}
+}
+.ui-main-foot{
+	height: 800px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.ui-main-foot-left{
+	width: 50%;
+	height: 100%;
+}
+.ui-main-foot-right{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.ui-main-foot-thing{
+	width: 100%;
+	height: 50%;
+}
+.ui-main-foot-example{
+	width: 50%;
+	height: 50%;
+	background-color: #0078d7;
+}
+.ui-main-foot-around{
+	width: 50%;
+	height: 50%;
+}
+@media (max-width: 900px) {
+	.ui-main-foot-left{
+		width: 100%;
+	}
+	.ui-main-foot-right{
+		width: 100%;
+	}
+}
+.ui-main-foot img{
+	width: 100%;
+	height: 100%;
+}
+.ui-main-foot-example-sqre{
+	width: 100%;
+	height: 100%;
+	background-color: #0078d7;
+}
+.ui-main-foot-left-text{
+	position: relative;
+	margin-top: -400px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+}
+.ui-main-foot-left-texthead{
+	font-weight: 900;
+}
+
+.ui-main-foot-right-text{
+	position: relative;
+	margin-top: -200px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+}
+.ui-main-foot-right-texthead{
+	font-weight: 900;
+}
+.ui-main-foot-left-url{
+	text-align: center;
+	margin-top: 280px;
+}
+.ui-main-foot a{
+	color: #fff;
+}
+.ui-main-foot-thing-url{
+	text-align: center;
+	margin-top: 80px;
+}
+.ui-main-foot-example-url{
+	text-align: center;
+	margin-top: 50px;
+}
+.ui-main-foot-around-url{
+	text-align: center;
+	margin-top: 22px;
+}
