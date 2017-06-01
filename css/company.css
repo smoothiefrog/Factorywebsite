@@ -1,8 +1,44 @@
 *{
 	font-family: "Comic Sans MS";
 }
-.navbar-default{
-	z-index: 2;
+#header {
+	border-width: 0 0 1px 0;
+	border-style: solid;
+}
+
+.ui-header {
+	padding-right: 20px;
+}
+.fn-font-gray {
+	color: #676767;
+}
+.ui-search {
+	float: left;
+	margin-top: 6px;
+	margin-left: 15px;
+	height: 35px;
+	width: 240px;
+	line-height: 35px; 
+}
+.fn-font-center {
+	text-align: center;
+}
+.ui-search-in-store {
+	padding-left: 5%;
+	border-style: none;
+	height: 100%;
+	width: 90%;
+	float: left;
+}
+
+.fn-clickable {
+	cursor: pointer;
+}
+.fn-border {
+	border-style: solid;
+	border-color: #c7c7c7;
+	border-width: 1px;
+	text-align: center;
 }
 .imgback {
 	position: relative;
@@ -46,7 +82,7 @@
 	.ui-main-top-text div{
 		width: 430px;
 	}
-	img{
+	.imgback{
 		width: 430px;
 	}
 	.ui-main-imf{

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Examples</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/churse.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="header">
+      <div class="container-fluid fn-font-gray">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+          data-target="#example-navbar-collapse">
+          <span class="sr-only">切换导航</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <span class="ui-header">
+            <img src="./img/logo.png" alt="" style="height: 50px;">
+            <a href="#" class="fn-font-gray">HQSMPC</a>
+          </span>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                商店
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">不锈钢系列</a></li>
+                <li><a href="#">铝合金系列</a></li>
+                <li><a href="#">斜拉撑</a></li>
+                <li class="divider"></li>
+                <li><a href="#">外贸专用</a></li>
+                <li class="divider"></li>
+                <li><a href="#">搪瓷水箱挂架系列</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                产品
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">外挂件（卧式）</a></li>
+                <li><a href="#">外挂件（立式）</a></li>
+                <li><a href="#">内挂架</a></li>
+                <li class="divider"></li>
+                <li><a href="#">挂架垫块</a></li>
+                <li class="divider"></li>
+                <li><a href="#">组合件</a></li>
+              </ul>
+            </li>
+            <li><a href="#">关于我们</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="ui-search fn-border fn-font-center">
+              <input type="text" class="ui-search-in-store">
+              <i class="fa fa-search fn-clickable"></i>
+            </li>
+            <li class="fn-font-center" style="width: 50px;line-height: 50px;">
+              <i class="fa fa-shopping-cart fa-lg fn-clickable"></i>
+            </li>
+            <li class="fn-font-center" style="width: 50px;line-height: 50px;">
+              <i class="fa fa-user-circle fa-lg fn-clickable"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-xs-12">
+            <div class="img_big">
+              <img class="img" src="img/three.png" id="img_show_three">
+              <img class="img" src="img/two.png" id="img_show_two">
+              <img class="img" src="img/one.png" id="img_show_one">
+            </div><br>
+            <div class="img_thumb_box">
+              <ul class="img_thumb_list" style="overflow:hidden">
+                <li class="active">
+                  <a href="javascript:;" class="index_img_btn">
+                    <img src="img/one.png" id="img_one" alt="">
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="javascript:;" class="index_img_btn">
+                    <img src="img/two.png" id="img_two" alt="">
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="javascript:;" class="index_img_btn">
+                    <img src="img/three.png" id="img_three" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <h1>XXXXX<br>XXX</h1>
+            <br>
+            <div class="price">
+              <h5>售价：</h5>
+              <a href="#comment">
+                <i class="fa fa-star fa-lg" id="star-four"></i>
+                <i class="fa fa-star fa-lg" id="star-three"></i>
+                <i class="fa fa-star fa-lg" id="star-two"></i>
+                <i class="fa fa-star fa-lg" id="star-one"></i>
+                <i class="fa fa-star fa-lg" id="star-zero"></i>
+              </a>
+            </div>
+            <div class="configure">
+              <h4>请选择配置</h4>
+              <div class="configure-chosen">
+                <div class="chosen" id="chosen-one">1</div>
+                <div class="chosen" id="chosen-two">2</div>
+                <div class="chosen" id="chosen-three">3</div>
+              </div>
+            </div>
+            <div class="choose-color">
+              <h4>请选择颜色</h4>
+              <div class="colors">
+                <div class="color" id="color-one">亮铂金</div>
+                <div class="color" id="color-two">深酒红</div>
+                <div class="color" id="color-three">灰钴蓝</div>
+              </div>
+            </div>
+            <div class="number">
+              <h6>数量</h6>
+              <div id="add"><i class="fa fa-plus-square fa-2x"></i>
+              </div>
+              <input id="amount" type=text name=amount value=1>
+              <div id="reduce"><i class="fa fa-minus-square fa-2x"></i>
+              </div>
+              <h6 style='margin-left:0.5%'>件</h6>
+            </div>
+            <div class="shopping-cart">
+              <a href="javascript:;" class="join-cart" data-type="bundle">加入购物车</a>
+              <br> <br><br>
+              <p>预售商品，每单限购一台</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row feature">
+        <div class="col-md-1 col-xs-2 product-one">
+          <a class="features" href="">主要特性</a>
+        </div>
+        <div class="col-md-1 col-xs-2 product-two">
+          <a class="features" href="">技术规格</a>
+        </div>
+        <div class="col-md-1 col-xs-2 product-three">
+          <a class="features" href="">包装与质</a>
+        </div>
+        <div class="col-md-1 col-xs-2">
+          <a class="features" href="">主要特性</a>
+        </div>
+        <div class="col-md-1 col-xs-2">
+          <a class="features" href="">主要特性</a>
+        </div>
+      </div>
+      <div class="row product-introduction">
+        <div class="col-md-6 col-xs-12 picture-feature">
+          <img src="img/picture.png" alt="" class="img-feature">
+        </div>
+        <div class="col-md-6 col-xs-12 feature-contact one">
+          <h2>XXXXX</h2>
+          <h2>XXXXX</h2>
+          <h4><br>xxxxx<br></h4>
+          <div class="img-list">
+            <img src="img/six.png" alt="" class="img-feature-small">
+            <img src="img/six.png" alt="" class="img-feature-small">
+            <img src="img/six.png" alt="" class="img-feature-small">
+          </div>
+        </div>
+      </div>
+      <div class="row product-introduction two">
+        <div class="col-md-6 col-xs-12 feature-contact">
+          <h2>XXXXX</h2>
+          <h2>XXXXX</h2>
+          <h4><br>xxxxx<br></h4>
+          <div class="img-list">
+            <img src="img/six.png" alt="" class="img-feature-small">
+            <img src="img/six.png" alt="" class="img-feature-small">
+            <img src="img/six.png" alt="" class="img-feature-small">
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-12 picture-feature">
+          <img src="img/picture.png" alt="" class="img-feature">
+        </div>
+      </div>
+      <div class="row product-introduction three">
+        <div class="col-md-6 col-xs-12 picture-feature">
+          <img src="img/picture.png" alt="" class="img-feature">
+        </div>
+        <div class="col-md-6 col-xs-12 feature-contact">
+          <h2>XXXXX</h2>
+          <h2>XXXXX</h2>
+          <h4><br>xxxxx<br></h4>
+          <div class="img-list">
+            <img src="img/six.png" alt="" class="img-feature-small">
+            <img src="img/six.png" alt="" class="img-feature-small">
+            <img src="img/six.png" alt="" class="img-feature-small">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/churse.js"></script>
+  </body>
+</html>
