@@ -10,8 +10,8 @@
 		<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.css">
 	</head>
 	<body>
-		<nav class="navbar navbar-default" role="navigation" id="#header">
-			<div class="container-fluid">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="header">
+			<div class="container-fluid fn-font-gray">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse"
 					data-target="#example-navbar-collapse">
@@ -20,38 +20,51 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">菜鸟教程</a>
+					<span class="ui-header">
+						<img src="img/logo.png" alt="" style="height: 50px;">
+					</span>
 				</div>
 				<div class="collapse navbar-collapse" id="example-navbar-collapse">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">iOS</a></li>
-						<li><a href="#">SVN</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-								Java <b class="caret"></b>
-							</a>
-							<ul class="dropdown-menu">
-								<li><a href="#">jmeter</a></li>
-								<li><a href="#">EJB</a></li>
-								<li><a href="#">Jasper Report</a></li>
-								<li class="divider"></li>
-								<li><a href="#">分离的链接</a></li>
-								<li class="divider"></li>
-								<li><a href="#">另一个分离的链接</a></li>
-							</ul>
-						</li>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">登录</a></li>
+						<li><a href="#">注册</a></li>
+						<li><div class="whiteline"></div></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
+		
 		<div class="container-fluid">
 			<div class="row">
-				<div class="ui-login">
-					
-				</div>
+				<canvas height="100%" width="100%" id="canvas" style="position: absolute; height: 100%"></canvas>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<center>
+					<form class="login">
+						<div class="ui-user">
+							<p>用户名</p>
+							<input type="text" placeholder="请在这里输入您的用户名" class="ui-input">
+						</div>
+						<div class="ui-password">
+							<p>密码</p>
+							<input type="text" placeholder="请在这里输入您的密码" class="ui-input">
+						</div>
+						<div class="ui-code">
+							<p>验证码</p>
+							<input type="text" placeholder="请在这里输入验证码" class="ui-input">
+							<div class="code" onclick="createCode()"></div>
+						</div>
+						<div class="ui-button">
+							<input type="submit" value="登录">
+						</div>
+					</form>
+				</center>
 			</div>
 		</div>
 		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
 		<script type="text/javascript" src="lib/bootstrap/js/bootstrap.js"></script>
 	</body>
 </html>
