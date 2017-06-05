@@ -1,6 +1,7 @@
 * {
 	font-family: "Comic Sans MS";
 	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 }
 
@@ -10,6 +11,7 @@ html, body {
 }
 
 #header {
+	padding: 0 15px 0 15px;
 	border-width: 0 0 1px 0;
 	border-style: solid;
 }
@@ -86,6 +88,73 @@ html, body {
 	width: 100%;
 	height: 100%;
 	margin: 0;
+	color: white;
+}
+
+.ui-introduction-title {
+	position: relative;
+	width: 50%;
+	top: -65%;
+	left: 10%;
+	font-size: 40px;
+}
+
+.ui-introduction-info {
+	position: relative;
+	width: 50%;
+	top: -65%;
+	left: 10%;
+	font-size: 25px;
+}
+
+.ui-slide-left {
+	position: relative;
+	width: 2%;
+	height: 15%;
+	top: -60%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.ui-slide-right {
+	position: relative;
+	width: 2%;
+	height: 15%;
+	top: -75%;
+	left: 98%;
+	background-color: rgba(0, 0, 0, 0.7);
+	margin: 0;
+}
+
+.ui-slide-left:hover {
+	cursor: pointer;
+}
+
+.ui-slide-right:hover {
+	cursor: pointer;
+}
+
+.fn-slide-left {
+	color: white;
+	width: 100%;
+	text-align: center;
+	height: 100%;
+	font-size: 40px;
+}
+
+.fn-slide-right {
+	color: white;
+	width: 100%;
+	text-align: center;
+	height: 100%;
+	font-size: 40px;
+}
+
+.fn-slide-left:before {
+	content: "<";
+}
+
+.fn-slide-right:before {
+	content: ">";
 }
 
 .ui-buy {
@@ -106,6 +175,11 @@ html, body {
 	width: 25%;
 	height: 100%;
 	float: left;
+}
+
+.ui-product:hover {
+	background-color: #dddddd;
+	cursor: pointer;
 }
 
 .ui-product-img {
@@ -133,6 +207,13 @@ html, body {
 	color: black;
 }
 
+.ui-about {
+	position: relative;
+	width: 50%;
+	top: -75%;
+	left: 10%;
+}
+
 .ui-tail {
 	width: 100%;
 	height: 50px;
@@ -144,6 +225,7 @@ html, body {
 	padding: 0 5% 0 5%;
 	font-size: 16px;
 	line-height: 60px;
+	background-color: #dddddd;
 }
 
 .fn-icon {
@@ -170,6 +252,31 @@ html, body {
 	background-color: #f2f2f2;
 }
 
+.ui-tail-info-detail {
+	padding-top: 20px;
+	padding-left: 20px;
+	width: 20%;
+	height: 100%;
+	float: left;
+	color: #626262;
+}
+
+.ui-tail-info-header {
+	line-height: 40px;
+	font-size: 20px;
+}
+
+.ui-tail-info-text {
+	line-height: 30px;
+	font-size: .8em;
+	color: #626262;
+}
+
+.ui-tail-info-text:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
 @media (min-width: 1080px) {
 	#title {
 		padding: 0 5% 0 5%;
@@ -183,8 +290,20 @@ html, body {
 }
 
 @media (max-width: 1080px) {
+	.ui-introduction-title {
+		top: -65%;
+		left: 0;
+	}
+	.ui-introduction-info {
+		top: -65%;
+		left: 0;
+	}
 	.ui-tail {
 		margin-top: 1375px;
+	}
+	.ui-introduction {
+		text-align: center;
+		background-color: #d7d7d7;
 	}
 	.fn-information {
 		font-size: 100%;
@@ -201,6 +320,12 @@ html, body {
 	}
 	.ui-body {
 		height: 1320px;
+	}
+	.fn-slide-left {
+		font-size: 20px;
+	}
+	.fn-slide-right {
+		font-size: 20px;
 	}
 }
 
