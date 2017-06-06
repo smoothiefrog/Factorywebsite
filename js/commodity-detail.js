@@ -151,4 +151,16 @@ function init() {
        $(".content-singlepro-2").hide();
        $(".content-combopro-2").show();
     })
+    //
+    $("[data-toggle='tooltip']").tooltip({html:true});
+    //点击图片出现隐藏div效果
+    $("#comingsoon-shadow").hide();
+    $(".pro-pics-new").click(function() {
+        $("#comingsoon-shadow").show();
+        $("#img-change").css({"opacity":"0.2"});
+    })
+    $("#comingsoon-shadow").click(function(){
+        $(this).hide();
+        $("#img-change").css({"opacity":"1"});
+    })
 }
