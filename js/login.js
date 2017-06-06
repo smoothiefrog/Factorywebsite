@@ -207,7 +207,8 @@ $(".form-button").click(function(){
     console.log(name);
   }
   else{
-    document.getElementById('ver').value = "验证码输入错误！请重新输入";
+    document.getElementById('ver').value = "";
+    document.getElementById('ver').placeholder = "验证码输入错误！请重新输入";
     console.log(name);
   }
 });
