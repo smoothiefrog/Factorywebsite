@@ -207,7 +207,12 @@ $(".ui-button").click(function(){
           if(_picTxt[i]!=name[i])
             pd = 1;
         }
-        if(pd==0)
+        if(pd==0){
+          
+        }
+        else{
+
+        }
     }
     else{
 
