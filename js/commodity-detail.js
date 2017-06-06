@@ -92,7 +92,7 @@ function init() {
         picanimate();
         bannerdot(i)
       }
-    },5000)
+    },3000)
     box.hover(function(){
       isauto = false;
     },function(){
@@ -163,4 +163,34 @@ function init() {
         $(this).hide();
         $("#img-change").css({"opacity":"1"});
     })
+    // 尾部
+    var flag = true,
+    working = false;
+
+      $("#btn").on("click", function() {
+        if (working === true) return;
+        working = true;
+        var h = $("#tail").offset().top;
+        if (flag) {
+          $("#tail").animate({
+            height: 250,
+          }, "slow", function() {
+            working = false;
+          });
+          $("body").animate({
+            scrollTop: h + 200,
+          }, "slow");
+        }
+        else {
+          $("#tail").animate({
+            height: 50,
+          }, "slow", function() {
+            working = false;
+          });
+          $("body").animate({
+            scrollTop: h - 200,
+          }, "slow");
+        }
+        flag = !flag;
+      })
 }
