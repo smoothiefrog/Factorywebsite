@@ -99,42 +99,7 @@
 	margin-top: 14px;
 	transform: rotate(1deg);
 }
-@media(max-width: 992px){ 
-	.title2-right  {
-		opacity: 0;
-		margin-left: 10%;
-	}
-}
-.head{
-	width: 90%;
-	height: 380px;
-	background: pink;
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-top: 60px;
-	display: flex;
-}
-.head-left{
-	width: 20%;
-	height: 380px;
-	background: #515857;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-.head-right{
-	width: 80%;
-}
-@media(max-width: 870px){
-	.head-left {
-		width: 100%;
-	}
-	.head-right {
-		width: 100%;
-	}
-	.head{
-		display: block;
-	}
-}
+
 .head-left-a{
 	width: 100%;
 	height: 60px;
@@ -151,13 +116,14 @@
 }
 .body{
 	width: 90%;
-	height: 3000px;
+	height: 2400px;
 	margin-top: 20px;
 	margin-left: 5%;
 	margin-right: 5%;
 }
 .body-box1-body{
 	display: flex;
+	flex-wrap: wrap;
 	/*margin-top: 15px;
 	margin-left: 5%;*/
 }
@@ -168,14 +134,19 @@
 }
 .body-box1-sub1{
 	margin-left: 3%;
+	width:17%;
+}
+.body-box1-sub2{
+	margin-left: 2%;
+	width:17%;
 }
 .body-box1-content h3{
 	color: black;
 	margin-bottom:0px;
 }
 .body-box1-picture{
-	width:90%;
 	height: 140px;
+	width: 100%;
 }
 .body-box1-price{
 	color: #ec5411;
@@ -188,9 +159,14 @@
 .body-box2{
 	margin-top: 60px;
 	display: flex;
+	flex-wrap: wrap;
+}
+.body-box2-div{
+	width: 24%;
+	margin-left: 1%;
 }
 .body-box2 img{
-	 width:98%;
+	 width:100%;
 	 height:145px;
 }
 .body-box2 h5{
@@ -232,10 +208,11 @@
 }
 .body-box3-body-col1 p{
 	margin-left: 4%;
-	color: black;
+	color: gray;
 }
 .body-box3-body-col1 img{
 	width: 100%;
+	margin-top: 10px;
 }
 .body-box3-body-col2{
 	border-left: 1px solid lightgray;
@@ -277,4 +254,311 @@
 }
 .link{
 	text-decoration: none;
+}
+.product-image{
+	height: 180px;
+}
+.ui-tail {
+	min-width: 430px;
+	width: 100%;
+	height: 50px;
+	background-color: #eee;
+	overflow: hidden;
+}
+
+.ui-tail-header {
+	padding: 0 5% 0 5%;
+	font-size: 16px;
+	line-height: 60px;
+	background-color: #dddddd;
+}
+
+.fn-icon {
+	text-align: center;
+	float: left;
+	line-height: 30px;
+	margin: 10px;
+	width: 30px;
+	height: 30px;
+}
+
+.fn-expansion {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 60px;
+	float: right;
+}
+
+.ui-tail-info {
+	width: 100%;
+	padding: 0 5% 0 5%;
+	height: 200px;
+	background-color: #f2f2f2;
+}
+
+.ui-tail-info-detail {
+	padding-top: 20px;
+	padding-left: 20px;
+	width: 20%;
+	height: 100%;
+	float: left;
+	color: #626262;
+}
+
+.ui-tail-info-header {
+	line-height: 40px;
+	font-size: 20px;
+}
+
+.ui-tail-info-text {
+	line-height: 30px;
+	font-size: .8em;
+	color: #626262;
+}
+
+.ui-tail-info-text:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+@media(max-width: 992px){ 
+	.title2-right  {
+		opacity: 0;
+		margin-left: 10%;
+	}
+	.title2-left{
+		font-size: 18px;
+	}
+	.body-box1-title{
+		font-size: 20px;
+	}
+}
+.head{
+	width: 90%;
+	height: 380px;
+	background: pink;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 60px;
+	display: flex;
+}
+.head-left{
+	width: 20%;
+	height: 380px;
+	background: #515857;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.head-right{
+	width: 80%;
+}
+#bootstrap-touch-slider{
+	height: 380px;
+}
+.slide-content{
+	font-family: comic sans MS;
+}
+@media(max-width: 1170px){
+	/*活动专区*/
+    .body-box2 img{
+	 width:100%;
+	 height:120px;
+    }
+   .body-box2 h5{
+	font-size:15px;
+    }
+   .body-box2 p{
+	font-size: 10px;
+   }
+}
+@media(max-width: 870px){
+	/*滑动图区——适应手机端*/
+	.head-left  {
+		display: none;
+	}
+	.head-right{
+		width: 100%;
+		height: 300px;
+	}
+	#bootstrap-touch-slider{
+		height: 300px;
+	}
+	.head{
+		height: 300px;
+	}
+	.slide-head{
+		font-size: 18px;
+	}
+	/*新品上市区自适应*/
+	.body-box1-sub1{
+		display: none;
+	}
+	.body-box1-sub2{
+		width: 23%;
+	}
+	.body-box1-content h3{
+	font-size: 19px;
+    }
+    .body-box1-content p{
+	font-size: 10px;
+    }
+   .body-box1-picture{
+	height: 120px;
+    }
+   .body-box1-price{
+	font-size: 12px;
+    }
+   .body-box1-price span{
+	font-size: 16px;
+   }
+   /*产品系列自适应*/
+   .body-box3-body-col1{
+   	display: none;
+   }
+   .body-box3-body-col2 p{
+	font-size: 1px;
+}
+.body-box3-body-col2 h4{
+	font-size: 16px;
+}
+.body-box3-body-col2 h5{
+	font-size: 1px;
+}
+.body-box3-body-col2 p span{
+	font-size: 16px;
+	font-weight: bold;
+}
+}
+@media(max-width: 560px){
+	/*活动专区自适应*/
+   .body-box2-div{
+	width: 49%;
+   }
+   .body-box2 h5{
+	display: none;
+    }
+   .body-box2 p{
+	margin-top: 10px;
+	color: black;
+   }
+	
+}
+@media(max-width: 530px){
+	/*滑动图区自适应*/
+	.head-left  {
+		display: none;
+	}
+	.head-right{
+		width: 100%;
+		height: 220px;
+	}
+	#bootstrap-touch-slider{
+		height: 220px;
+	}
+	.head{
+		height: 220px;
+	}
+	.slide-head{
+		font-size: 18px;
+	}
+	/*新品上市区自适应*/
+	.body-box1-sub1{
+		display: none;
+	}
+	.body-box1-sub2{
+		width: 30%;
+	}
+	.body-box1-content h3{
+	font-size: 19px;
+    }
+    .body-box1-content p{
+	font-size: 10px;
+    }
+   .body-box1-picture{
+	height: 120px;
+    }
+   .body-box1-price{
+	font-size: 12px;
+    }
+   .body-box1-price span{
+	font-size: 16px;
+   }
+}
+@media(max-width: 414px){
+	/*滑动图区自适应*/
+	.head-left  {
+		display: none;
+	}
+	.head-right{
+		width: 100%;
+		height: 148px;
+	}
+	#bootstrap-touch-slider{
+		height: 148px;
+	}
+	.head{
+		height: 148px;
+	}
+	.slide-head{
+		font-size: 17px;
+	}
+	/*新品上市区自适应*/
+	.body-box1-sub1{
+		display: none;
+	}
+	.body-box1-sub2{
+		width: 47%;
+	}
+	.body-box1-content h3{
+	font-size: 19px;
+    }
+    .body-box1-content p{
+	font-size: 10px;
+    }
+   .body-box1-picture{
+	height: 90px;
+    }
+   .body-box1-price{
+	font-size: 12px;
+    }
+   .body-box1-price span{
+	font-size: 16px;
+   }
+   /*产品系列自适应*/
+.body-box3-body-col2 h4{
+	font-size: 16px;
+}
+.body-box3-body-col2 h5{
+	display: none;
+}
+.body-box3-body-col2 img{
+	height: 80px;
+}
+.body-box3-body-col2 p span{
+	font-size: 16px;
+	font-weight: bold;
+}
+.body-box3-body-col2 p{
+	margin-top: 15px;
+}
+.body-box3-body{
+	height: 200px;
+}
+.body-box3-body-col2{
+	height: 200px;
+}
+.tag1{
+	width: 8%;
+	height: 25px;
+	font-size: 15px;
+}
+.product-title{
+	font-size: 20px;
+}
+.body-box4,.body-box5,.body-box6{
+	margin-top: 40px;
+}
+.body{
+	height: 1950px;
+}
 }
