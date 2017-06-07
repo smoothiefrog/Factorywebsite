@@ -25,17 +25,18 @@
 	position: relative;
 	margin-top: 10%;
 	width: 400px;
-	height: 600px;
+	height: 400px;
 	border: solid 1px;
 	border-radius: 20px;
 }
 .ui-user .ui-password{
 	height: 20%;
 }
-.ui-code{
-	height: 40%;
+.ui-password{
+	margin-top: 0px;
 }
 .ui-button{
+	margin-top: 50px;
 	width: 75%;
 }
 .login p{

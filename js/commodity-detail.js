@@ -67,7 +67,7 @@ function init() {
         i++;
       picanimate();
     })
-
+    
     function picanimate(){ //图片滑动函数
       if(i>picleng-1)
         {i=0}

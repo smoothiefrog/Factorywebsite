@@ -32,10 +32,8 @@
 .ui-user .ui-password{
 	height: 20%;
 }
-.ui-code{
-	height: 40%;
-}
 .ui-button{
+	margin-top: 200px;
 	width: 75%;
 }
 .login p{

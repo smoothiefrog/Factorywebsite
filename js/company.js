@@ -14,18 +14,13 @@ $(document).ready(function() {
 	});
 
 	
-	$(".ui-main-foot-left-text").on("mouseover", function(event) {
-		$(this).css("opacity", "0.6");
-	});
-	$(".ui-main-foot-left-text").on("mouseout", function(event) {
-		$(this).css("opacity", "1");
+	$("#culture").on("click", function() {
+		var pos = $("div[name='culture']").offset().top - 50;
+		$("body").animate({scrollTop : pos,})
 	});
 
-	$(".ui-main-foot-right-text").on("mouseover", function(event) {
-		$(this).css("opacity", "0.6");
+	$("#about").on("click", function() {
+		var pos = $("div[name='about']").offset().top - 50;
+		$("body").animate({scrollTop : pos,})
 	});
-	$(".ui-main-foot-right-text").on("mouseout", function(event) {
-		$(this).css("opacity", "1");
-	});
-	
 })
