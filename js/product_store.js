@@ -38,7 +38,7 @@ function init() {
           } 
         });
     })
-// 尾部
+// 产品尾部小箭头
     var flag = true,
     working = false;
 
