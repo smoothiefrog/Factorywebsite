@@ -37,10 +37,38 @@ function init() {
             cancelAnimationFrame(timer);
           } 
         });
-        // document.body.scrollTop = document.documentElement.scrollTop = 0;
     })
-}
+// 尾部
+    var flag = true,
+    working = false;
 
+      $("#btn").on("click", function() {
+        if (working === true) return;
+        working = true;
+        var h = $("#tail").offset().top;
+        if (flag) {
+          $("#tail").animate({
+            height: 250,
+          }, "slow", function() {
+            working = false;
+          });
+          $("body").animate({
+            scrollTop: h + 200,
+          }, "slow");
+        }
+        else {
+          $("#tail").animate({
+            height: 50,
+          }, "slow", function() {
+            working = false;
+          });
+          $("body").animate({
+            scrollTop: h - 200,
+          }, "slow");
+        }
+        flag = !flag;
+      })
+}
 });
 
 

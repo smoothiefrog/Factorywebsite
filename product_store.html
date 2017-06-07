@@ -14,17 +14,7 @@
 </head>
 <body>
 	<div id="product_store_page">  
-	    <!-- 第一行标题 -->
-        <!-- <div class="title1">
-        	<img src="image/brand.png" style="width: 50px;height: 40px;margin-left: 5%;margin-top: 4px;">
-             <h4 style="margin-top: 17px;font-weight: bold;">海宁全顺</h6>
-             <a href="" class="title1-help">支持与帮助</a>
-             <input class="title1-input" placeholder="Surface Studio">
-             <span id="title1-icon1" class="glyphicon glyphicon-search" aria-hidden="true"></span>
-             <a href=""><span id="title1-icon2" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a> 
-             <a href="" class="title1-login">登录</a>
-        </div>  -->
-        <!-- <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="header"> -->
+        <nav class="navbar navbar-default" role="navigation" id="header">
 			<div class="container-fluid fn-font-gray">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -36,7 +26,7 @@
 					</button>
 					<span class="ui-header">
 						<img src="img/logo.png" alt="" style="height: 50px;">
-						<a href="#" class="fn-font-gray">HQSMPC</a>
+						<a href="index.html" class="fn-font-gray">HQSMPC</a>
 					</span>
 				</div>
 				<div class="collapse navbar-collapse" id="example-navbar-collapse">
@@ -75,7 +65,7 @@
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li class="ui-search fn-border fn-font-center">
-							<input type="text" class="ui-search-in-store">
+							<input type="text" class="ui-search-in-store" placeholder="在商城中搜索">
 							<i class="fa fa-search fn-clickable"></i>
 						</li>
 						<li class="fn-font-center" style="width: 50px;line-height: 50px;">
@@ -87,7 +77,7 @@
 					</ul>
 				</div>
 			</div>
-		<!-- </nav> -->
+		</nav>
 
          <!-- 第二行浮动标题 -->
         <div class="title2">
@@ -100,15 +90,20 @@
 		<div class="head">
 			<div class="head-left">
 
-				<a href="" class="head-left-a">镀锌系列<span class="glyphicon glyphicon-menu-right"></span></a>
-				<a href="" class="head-left-a">不锈钢系列<span class="glyphicon glyphicon-menu-right" style="margin-left: 40%;"></span></a>
-				<a href="" class="head-left-a">铝合金系列<span class="glyphicon glyphicon-menu-right" style="margin-left: 40%;"></span></a>
-				<a href="" class="head-left-a">斜拉撑<span class="glyphicon glyphicon-menu-right" style="margin-left: 57%;"></span></a>
-				<a href="" class="head-left-a">外贸专用<span class="glyphicon glyphicon-menu-right" style="margin-left: 49%;"></span></a>
-				<a href="" class="head-left-a">搪瓷水箱挂架系列<span class="glyphicon glyphicon-menu-right" style="margin-left: 13%;"></span></a>
+				<a href="commodity-detail.html" class="head-left-a">镀锌系列</a>
+
+				<a href="commodity-detail.html" class="head-left-a">不锈钢系列</a>
+
+				<a href="commodity-detail.html" class="head-left-a">铝合金系列</a>
+
+				<a href="commodity-detail.html" class="head-left-a">斜拉撑</a>
+
+				<a href="" class="head-left-a">外贸专用</a>
+
+				<a href="commodity-detail.html" class="head-left-a">搪瓷水箱挂架系列</a>
 			</div>
 			<div class="head-right">
-	           <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" style="height: 380px;" >
+	           <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
 
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
@@ -132,8 +127,8 @@
 						<div class="row">
 							<!-- Slide Text Layer -->
 							<div class="slide-text slide_style_right">
-								<h2>太阳能配件高端品牌</h2>
-								<p>Solar accessories high-end brands
+								<h2 class="slide-head">太阳能配件高端品牌</h2>
+								<p class="slide-content">Solar accessories high-end brands
 </p>
 							</div>
 						</div>
@@ -149,8 +144,8 @@
 					<div class="bs-slider-overlay"></div>
 					<!-- Slide Text Layer -->
 					<div class="slide-text slide_style_left">
-						<h2 data-animation="animated flipInX">有心就有实力</h2>
-						<p data-animation="animated lightSpeedIn">determined to have strength</p>
+						<h2 data-animation="animated flipInX" class="slide-head">有心就有实力</h2>
+						<p data-animation="animated lightSpeedIn" class="slide-content">determined to have strength</p>
 					</div>
 				</div>
 				<!-- End of Slide -->
@@ -162,9 +157,9 @@
 					<img src="img/5.jpg" alt="Bootstrap Touch Slider"  class="slide-image"/>
 					<div class="bs-slider-overlay"></div>
 					<!-- Slide Text Layer -->
-					<div class="slide-text slide_style_right">
-						<h2 data-animation="animated zoomInLeft">专业品质  追求卓越</h2>
-						<p data-animation="animated fadeInRight">Professional quality  pursue excellence
+					<div class="slide-text slide_style_center">
+						<h2 data-animation="animated zoomInLeft" class="slide-head">专业品质  追求卓越</h2>
+						<p data-animation="animated fadeInRight" class="slide-content">Professional quality  pursue excellence
 </p>
 					</div>
 				</div>
@@ -192,51 +187,51 @@
 				<div class="body-box1-title">新品上市</div>
 				<div class="body-box1-body">
 					<div class="body-box1-sub1">
-					<a href=""><img src="img/1.jpg" class="body-box1-picture"></a>
+					<a href="churse.html"><img src="img/new1.jpg" class="body-box1-picture"></a>
 				    
 					<div class="body-box1-content">
-						<a href="" style="text-decoration: none;"><h3>Surface Pro</h3></a>
-						<p style="color: gray;">随心所欲，百变菁英任选</p>
+						<a href="churse.html" style="text-decoration: none;"><h3>精锐派SCP-10</h3></a>
+						<p style="color: gray;">50L/80L/100L</p>
 					</div>
 					<p class="body-box1-price">
 						售价：<span>¥666起</span>
 					</p>
 				    </div>
 				    <div class="body-box1-sub2">
-				    <a href=""><img src="img/1.jpg" class="body-box1-picture"></a>
+				    <a href="churse.html"><img src="img/new2.jpg" class="body-box1-picture"></a>
 					<div class="body-box1-content">
-						<a href="" style="text-decoration: none;"><h3>Surface Pro</h3></a>
-						<p style="color: gray;">随心所欲，百变菁英任选</p>
+						<a href="churse.html" style="text-decoration: none;"><h3>享乐派T-6</h3></a>
+						<p style="color: gray;">50L/60L/100L</p>
 					</div>
 					<p class="body-box1-price">
-						售价：<span>¥666起</span>
+						售价：<span>¥716起</span>
 					</p>
 				    </div>
 				    <div class="body-box1-sub2">
-				   <a href=""><img src="img/1.jpg" class="body-box1-picture"></a>
+				   <a href="churse.html"><img src="img/new3.jpg" class="body-box1-picture"></a>
 					<div class="body-box1-content">
-						<a href="" style="text-decoration: none;"><h3>Surface Pro</h3></a>
-						<p style="color: gray;">随心所欲，百变菁英任选</p>
+						<a href="churse.html" style="text-decoration: none;"><h3>Kitchen Baby</h3></a>
+						<p style="color: gray;">6L/10L</p>
 					</div>
 					<p class="body-box1-price">
-						售价：<span>¥666起</span>
+						售价：<span>¥106起</span>
 					</p>
 				    </div>
 				    <div class="body-box1-sub2">
-				   <a href=""><img src="img/1.jpg" class="body-box1-picture"></a>
+				   <a href="churse.html"><img src="img/new4.jpg" class="body-box1-picture"></a>
 					<div class="body-box1-content">
-						<a href="" style="text-decoration: none;"><h3>Surface Pro</h3></a>
-						<p style="color: gray;">随心所欲，百变菁英任选</p>
+						<a href="churse.html" style="text-decoration: none;"><h3>精锐派D-3</h3></a>
+						<p style="color: gray;">50L/80L/100L</p>
 					</div>
 					<p class="body-box1-price">
-						售价：<span>¥666起</span>
+						售价：<span>¥686起</span>
 					</p>
 				    </div>
 				    <div class="body-box1-sub2">
-				    <a href=""><img src="img/1.jpg" class="body-box1-picture"></a>
+				    <a href="churse.html"><img src="img/new5.jpg" class="body-box1-picture"></a>
 					<div class="body-box1-content">
-						<a href="" style="text-decoration: none;"><h3>Surface Pro</h3></a>
-						<p style="color: gray;">随心所欲，百变菁英任选</p>
+						<a href="churse.html" style="text-decoration: none;"><h3>Dove系列Pro Eco</h3></a>
+						<p style="color: gray;">50L/80L</p>
 					</div>
 					<p class="body-box1-price">
 						售价：<span>¥666起</span>
@@ -246,24 +241,24 @@
 			</div>
 			<!-- 活动专区 -->
 			<div class="body-box2">
-				<div>
+				<div class="body-box2-div">
 					<img src="img/box2-1.jpg">
-					<a href="" style="text-decoration: none;"><h5>卓越生产力，非凡创造力Surface 全明星系列震撼登陆</h5></a>
+					<a href="" style="text-decoration: none;"><h5>以指定机型换购太阳能全明星系列新品，最高额外补贴300元</h5></a>
 					<a href="" style="text-decoration: none;"><p>查看更多></p></a>
 				</div>
-				<div>
-					<img src="img/box2-1.jpg">
-					<a href="" style="text-decoration: none;"><h5>卓越生产力，非凡创造力Surface 全明星系列震撼登陆</h5></a>
+				<div class="body-box2-div">
+					<img src="img/box2-2.jpg">
+					<a href="" style="text-decoration: none;"><h5>太阳能全明星系列新品正值活动特惠段，现在购买立享9折优惠</h5></a>
 					<a href="" style="text-decoration: none;"><p>查看更多></p></a>
 				</div>
-				<div>
-					<img src="img/box2-1.jpg">
-					<a href="" style="text-decoration: none;"><h5>卓越生产力，非凡创造力Surface 全明星系列震撼登陆</h5></a>
-					<a href="" style="text-decoration: none;"><p>查看更多></p></a>
+				<div class="body-box2-div">
+					<img src="img/box2-3.png">
+					<a href="" style="text-decoration: none;"><h5>热水器等热门商品优惠促销全集结，买的更省</h5></a>
+					<a href="" style="text-decoration: none;"><p>立即抢购></p></a>
 				</div>
-				<div>
-					<img src="img/box2-1.jpg">
-					<a href="" style="text-decoration: none;"><h5>卓越生产力，非凡创造力Surface 全明星系列震撼登陆</h5></a>
+				<div class="body-box2-div">
+					<img src="img/box2-4.png">
+					<a href="" style="text-decoration: none;"><h5>商务套餐为您增加澎湃动力，购买热线400-805-678</h5></a>
 					<a href="" style="text-decoration: none;"><p>查看更多></p></a>
 				</div>
 			</div>
@@ -272,155 +267,215 @@
 				<h3>镀锌系列</h3>
 				<div class="body-box3-body">
 					<div class="body-box3-body-col1">
-						<a href="" style="text-decoration: none;"><h4>卓越生产力，非凡创造力Surface 全明星系列震撼登陆</h4></a>
+						<a href="commodity-detail.html" style="text-decoration: none;"><h4>专业品质，非凡创造力Surface 全明星系列震撼登陆</h4></a>
 					    <a href="" style="text-decoration: none;"><p>查看更多></p></a>
-					    <img src="img/3.jpg">
+					    <a href="commodity-detail.html"><img src="img/镀锌-1.jpg"></a>
 					</div>
 					<div class="body-box3-body-col2">
-					    <div class="tag1">新品</div>
-						<img src="img/2.jpg">
-						<a href="" style="text-decoration: none;"><h4>Microsoft HoloLens</h4></a>
+					    <div class="tag1">热销</div>
+						<a href="churse.html"><img class="product-image" src="img/镀锌-2.jpg"></a>
+						<a href="churse.html" style="text-decoration: none;"><h4>2012-88-48°桶托</h4></a>
 						<h5 style="color: gray;">卓越生产力，非凡创造力Surface 全明星系列震撼登陆</h5>
 				        <p>
-						    售价：<span>￥23488.00 起</span>
+						    售价：<span>￥12.50 </span>
 					    </p>
 					</div>
 					<div class="body-box3-body-col2">
 					    <div class="tag1">新品</div>
-						<img src="img/2.jpg">
-						<a href="" style="text-decoration: none;"><h4>Microsoft HoloLens</h4></a>
+						<a href="churse.html"><img class="product-image" src="img/镀锌-3.jpg"></a>
+						<a href="churse.html" style="text-decoration: none;"><h4>QS-28-45°(华扬系列)</h4></a>
 						<h5 style="color: gray;">卓越生产力，非凡创造力Surface 全明星系列震撼登陆</h5>
 				        <p>
-						    售价：<span>￥23488.00 起</span>
+						    售价：<span>￥15.00 </span>
 					    </p>
 					</div>
 					<div class="body-box3-body-col2">
 					    <div class="tag1">新品</div>
-						<img src="img/2.jpg">
-						<a href="" style="text-decoration: none;"><h4>Microsoft HoloLens</h4></a>
+						<a href="churse.html"><img class="product-image" src="img/镀锌-4.jpg"></a>
+						<a href="churse.html" style="text-decoration: none;"><h4>2012-58斜拉撑系列</h4></a>
 						<h5 style="color: gray;">卓越生产力，非凡创造力Surface 全明星系列震撼登陆</h5>
 				        <p>
-						    售价：<span>￥23488.00 起</span>
+						    售价：<span>￥9.90 </span>
 					    </p>
 					</div>
 				</div>
 			</div>
 			<!-- 不锈钢系列 -->
 			<div class="body-box4">
-				<h3>不锈钢系列</h3>
+				<h3 class="product-title">不锈钢系列</h3>
 				<div class="body-box3-body">
 					<div class="body-box3-body-col1">
-						<a href="" style="text-decoration: none;"><h4>卓越生产力，非凡创造力Surface 全明星系列震撼登陆</h4></a>
+						<a href="commodity-detail.html" style="text-decoration: none;"><h4>专业品质，非凡创造力Surface 全明星系列震撼登陆</h4></a>
 					    <a href="" style="text-decoration: none;"><p>查看更多></p></a>
-					    <img src="img/3.jpg">
+					    <a href="commodity-detail.html"><img src="img/镀锌-1.jpg"></a>
 					</div>
 					<div class="body-box3-body-col2">
-					    <div class="tag1">新品</div>
-						<img src="img/2.jpg">
-						<a href="" style="text-decoration: none;"><h4>Microsoft HoloLens</h4></a>
+					    <div class="tag1">热销</div>
+						<a href="churse.html"><img class="product-image" src="img/不锈钢-1.jpg"></a>
+						<a href="churse.html" style="text-decoration: none;"><h4>QS-24A型-45°(不锈钢)</h4></a>
 						<h5 style="color: gray;">卓越生产力，非凡创造力Surface 全明星系列震撼登陆</h5>
 				        <p>
-						    售价：<span>￥23488.00 起</span>
+						    售价：<span>￥15.50 </span>
 					    </p>
 					</div>
 					<div class="body-box3-body-col2">
 					    <div class="tag1">新品</div>
-						<img src="img/2.jpg">
-						<a href="" style="text-decoration: none;"><h4>Microsoft HoloLens</h4></a>
+						<a href="churse.html"><img class="product-image" src="img/不锈钢-2.jpg"></a>
+						<a href="churse.html" style="text-decoration: none;"><h4>QS-6-45°(通用桶托)</h4></a>
 						<h5 style="color: gray;">卓越生产力，非凡创造力Surface 全明星系列震撼登陆</h5>
 				        <p>
-						    售价：<span>￥23488.00 起</span>
+						    售价：<span>￥20.00 </span>
 					    </p>
 					</div>
 					<div class="body-box3-body-col2">
 					    <div class="tag1">新品</div>
-						<img src="img/2.jpg">
-						<a href="" style="text-decoration: none;"><h4>Microsoft HoloLens</h4></a>
+						<a href="churse.html"><img class="product-image" src="img/不锈钢-3.jpg"></a>
+						<a href="churse.html" style="text-decoration: none;"><h4>QS-5A型-45°(通用型)</h4></a>
 						<h5 style="color: gray;">卓越生产力，非凡创造力Surface 全明星系列震撼登陆</h5>
 				        <p>
-						    售价：<span>￥23488.00 起</span>
+						    售价：<span>￥19.90 </span>
 					    </p>
 					</div>
 				</div>
 			</div>
 			<!-- 铝合金系列 -->
 			<div class="body-box5">
-				<h3>铝合金系列</h3>
+				<h3 class="product-title">铝合金系列</h3>
 				<div class="body-box3-body">
 					<div class="body-box3-body-col1">
-						<a href="" style="text-decoration: none;"><h4>卓越生产力，非凡创造力Surface 全明星系列震撼登陆</h4></a>
+						<a href="commodity-detail.html" style="text-decoration: none;"><h4>专业品质，非凡创造力Surface 全明星系列震撼登陆</h4></a>
 					    <a href="" style="text-decoration: none;"><p>查看更多></p></a>
-					    <img src="img/3.jpg">
+					    <a href="commodity-detail.html"><img src="img/镀锌-1.jpg"></a>
 					</div>
 					<div class="body-box3-body-col2">
-					    <div class="tag1">新品</div>
-						<img src="img/2.jpg">
-						<a href="" style="text-decoration: none;"><h4>Microsoft HoloLens</h4></a>
+					    <div class="tag1">热销</div>
+						<a href="churse.html"><img class="product-image" src="img/铝合金-1.jpg"></a>
+						<a href="churse.html" style="text-decoration: none;"><h4>QS-22-48°系列</h4></a>
 						<h5 style="color: gray;">卓越生产力，非凡创造力Surface 全明星系列震撼登陆</h5>
 				        <p>
-						    售价：<span>￥23488.00 起</span>
+						    售价：<span>￥15.50 </span>
 					    </p>
 					</div>
 					<div class="body-box3-body-col2">
 					    <div class="tag1">新品</div>
-						<img src="img/2.jpg">
-						<a href="" style="text-decoration: none;"><h4>Microsoft HoloLens</h4></a>
+						<a href="churse.html"><img class="product-image" src="img/铝合金-2.jpg"></a>
+						<a href="churse.html" style="text-decoration: none;"><h4>QS-27-38°D型系列</h4></a>
 						<h5 style="color: gray;">卓越生产力，非凡创造力Surface 全明星系列震撼登陆</h5>
 				        <p>
-						    售价：<span>￥23488.00 起</span>
+						    售价：<span>￥18.00 </span>
 					    </p>
 					</div>
 					<div class="body-box3-body-col2">
 					    <div class="tag1">新品</div>
-						<img src="img/2.jpg">
-						<a href="" style="text-decoration: none;"><h4>Microsoft HoloLens</h4></a>
+						<a href="churse.html"><img class="product-image" src="img/铝合金-3.jpg"></a>
+						<a href="churse.html" style="text-decoration: none;"><h4>2012-58斜拉撑系列</h4></a>
 						<h5 style="color: gray;">卓越生产力，非凡创造力Surface 全明星系列震撼登陆</h5>
 				        <p>
-						    售价：<span>￥23488.00 起</span>
+						    售价：<span>￥19.90 </span>
 					    </p>
 					</div>
 				</div>
 			</div>
 			<!-- 斜拉撑 -->
 			<div class="body-box6">
-				<h3>斜拉撑</h3>
+				<h3 class="product-title">斜拉撑</h3>
 				<div class="body-box3-body">
 					<div class="body-box3-body-col1">
-						<a href="" style="text-decoration: none;"><h4>卓越生产力，非凡创造力Surface 全明星系列震撼登陆</h4></a>
+						<a href="commodity-detail.html" style="text-decoration: none;"><h4>专业品质，非凡创造力Surface 全明星系列震撼登陆</h4></a>
 					    <a href="" style="text-decoration: none;"><p>查看更多></p></a>
-					    <img src="img/3.jpg">
+					    <a href="commodity-detail.html"><img src="img/镀锌-1.jpg"></a>
 					</div>
 					<div class="body-box3-body-col2">
-					    <div class="tag1">新品</div>
-						<img src="img/2.jpg">
-						<a href="" style="text-decoration: none;"><h4>Microsoft HoloLens</h4></a>
+					    <div class="tag1">热销</div>
+						<a href="churse.html"><img class="product-image" src="img/镀锌-2.jpg"></a>
+						<a href="churse.html" style="text-decoration: none;"><h4>2012-88-48°桶托</h4></a>
 						<h5 style="color: gray;">卓越生产力，非凡创造力Surface 全明星系列震撼登陆</h5>
 				        <p>
-						    售价：<span>￥23488.00 起</span>
+						    售价：<span>￥12.50 </span>
 					    </p>
 					</div>
 					<div class="body-box3-body-col2">
 					    <div class="tag1">新品</div>
-						<img src="img/2.jpg">
-						<a href="" style="text-decoration: none;"><h4>Microsoft HoloLens</h4></a>
+						<a href="churse.html"><img class="product-image" src="img/镀锌-3.jpg"></a>
+						<a href="churse.html" style="text-decoration: none;"><h4>QS-28-45°(华扬系列)</h4></a>
 						<h5 style="color: gray;">卓越生产力，非凡创造力Surface 全明星系列震撼登陆</h5>
 				        <p>
-						    售价：<span>￥23488.00 起</span>
+						    售价：<span>￥15.00 </span>
 					    </p>
 					</div>
 					<div class="body-box3-body-col2">
 					    <div class="tag1">新品</div>
-						<img src="img/2.jpg">
-						<a href="" style="text-decoration: none;"><h4>Microsoft HoloLens</h4></a>
+						<a href="churse.html"><img class="product-image" src="img/镀锌-4.jpg"></a>
+						<a href="churse.html" style="text-decoration: none;"><h4>2012-58斜拉撑系列</h4></a>
 						<h5 style="color: gray;">卓越生产力，非凡创造力Surface 全明星系列震撼登陆</h5>
 				        <p>
-						    售价：<span>￥23488.00 起</span>
+						    售价：<span>￥9.90 </span>
 					    </p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="tail"></div>
+		<!-- <div class="tail">
+			
+		</div> -->
+		<div class="ui-tail" id="tail">
+			<div class="ui-tail-header">
+				<span class="fn-icon fn-clickable" style="background-color: #04a90f;">
+					<i class="fa fa-weixin fa-lg" style="color: white;"></i>
+				</span>
+				<span class="fn-icon fn-clickable" style="background-color: #0279d7;">
+					<i class="fa fa-weibo fa-lg" style="color: white;"></i>
+				</span>
+				<span>关注我们</span>
+				<span class="fn-expansion">
+					<i id="btn" class="fa fa-sort-asc fa-lg fn-clickable"></i>
+				</span>
+			</div>
+			<div class="ui-tail-info">
+				<div class="ui-tail-info-detail">
+					<div class="ui-tail-info-header">支架系列</div>
+					<div class="ui-tail-info-text">铝合金</div>
+					<div class="ui-tail-info-text">不锈钢</div>
+					<div class="ui-tail-info-text">斜拉撑</div>
+					<div class="ui-tail-info-text">其他</div>
+				</div>
+				<div class="ui-tail-info-detail">
+					<div class="ui-tail-info-header">外挂件系列</div>
+					<div class="ui-tail-info-text">立式</div>
+					<div class="ui-tail-info-text">卧式</div>
+					<div class="ui-tail-info-text">组合件</div>
+					<div class="ui-tail-info-text">其他</div>
+				</div>
+				<div class="ui-tail-info-detail">
+					<div class="ui-tail-info-header">热水器</div>
+					<div class="ui-tail-info-text">温控专家</div>
+					<div class="ui-tail-info-text">迷你</div>
+					<div class="ui-tail-info-text">其他</div>
+				</div>
+				<div class="ui-tail-info-detail">
+					<div class="ui-tail-info-header">关于我们</div>
+					<div class="ui-tail-info-text">厂家地址</div>
+					<div class="ui-tail-info-text">联系电话</div>
+					<div class="ui-tail-info-text">预定产品</div>
+					<div class="ui-tail-info-text">其他信息</div>
+				</div>
+				<div class="ui-tail-info-detail">
+					<div class="ui-tail-info-header">公司</div>
+					<div class="ui-tail-info-text">招贤纳士</div>
+					<div class="ui-tail-info-text">公司新闻</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
 	</div>
 
 </body>
