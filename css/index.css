@@ -264,6 +264,7 @@ html, body {
 }
 
 .ui-tail-info-header {
+	color: #626262;
 	line-height: 40px;
 	font-size: 20px;
 }
@@ -271,6 +272,9 @@ html, body {
 .ui-tail-info-text {
 	line-height: 30px;
 	font-size: .8em;
+}
+
+.ui-tail-info-text a {
 	color: #626262;
 }
 
