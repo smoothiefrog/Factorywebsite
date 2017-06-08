@@ -105,10 +105,11 @@
 
     $(function () {
       //var ie6 = document.all;
-      var dv = $('.feature'), st;
+      var dv = $(".feature"), st;
     dv.attr('otop', dv.offset().top); //存储原来的距离顶部的距离
     $(window).scroll(function () {
-      st = Math.max(document.body.scrollTop || document.documentElement.scrollTop);
+      //st = Math.max(document.body.scrollTop || document.documentElement.scrollTop);
+      st = Math.max(document.body.scrollTop || document.$(".feature").scrollTop);
       if (st > parseInt(dv.attr('otop'))) {
        if (dv.css('position') != 'fixed')
         dv.css({ 'position': 'fixed', 'top': '15px' ,'width':'100%','margin-left':'-5.0%','z-index':'11','padding-left':'5.3%'});} 
@@ -167,6 +168,6 @@
         }, "slow");
       }
       flag = !flag;
-    })
+    });
   }
 });
