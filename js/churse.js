@@ -4,11 +4,14 @@
  * @date    2017-05-25 22:11:40
  * @version $Id$
  */
+ $("#img_show_two").hide();
+ $("#img_show_three").hide();
  $(document).ready(function(){
- 	$("#img_show_two").hide();
- 	$("#img_show_three").hide();
+ 	
  	$(init)
- 	function init(){
+ 	function init()
+ 	{
+
  	//$("#img_show_two").hide();
  	//$("#img_show_three").hide();
  	$("#img_three").css("border","0px");
@@ -79,7 +82,10 @@
  	}) ;
  	$("#reduce").click(function() {
  		var num=document.getElementById("amount");
- 		num.value=parseInt(num.value) - 1;
+ 		if(num.value==0)
+ 			num.value=0;
+ 		else 
+ 			num.value=parseInt(num.value) - 1;
  	}) ;
 
  	$("#img_two").click(function() {
@@ -118,65 +124,33 @@
  		$("#color-two").css("border","1px solid #c7c7c7");
  		$("#color-one").css("border","1px solid #c7c7c7");
  	}) ;
- 	
- 	$(".fa-star").eq(4).click(function() {
- 		if($(".fa-star").eq(4).css("color")=="rgb(255, 0, 0)")
- 		{
- 			$(".fa-star").eq(4).css("color","#c7c7c7");
- 		}
- 		else
- 		{
- 			$(".fa-star").eq(4).css("color","#ff0000");
- 		}
+ 	$(".join-cart").click(function() {
+ 		 alert("请先登录！");
  	});
- 	$(".fa-star").eq(3).click(function() {
- 		if($(".fa-star").eq(3).css("color")=="rgb(255, 0, 0)")
- 		{
- 			$(".fa-star").eq(3).css("color","#c7c7c7");
- 		}
- 		else
- 		{
- 			$(".fa-star").eq(4).css("color","#ff0000");
- 			$(".fa-star").eq(3).css("color","#ff0000");
- 		}
+ 	$(".commont").click(function() {
+ 		 alert("请先登录！");
  	});
- 	$(".fa-star").eq(2).click(function() {
- 		if($(".fa-star").eq(2).css("color")=="rgb(255, 0, 0)")
- 		{
- 			$(".fa-star").eq(2).css("color","#c7c7c7");
- 		}
- 		else
- 		{
- 			for(i=4;i>=2;i--)
- 				$(".fa-star").eq(i).css("color","red");
- 		}
+  /*
+ 	$(function () {
+ 		var ie6 = document.all;
+ 		var dv = $('.feature'), st;
+ 		dv.attr('otop', dv.offset().top); //存储原来的距离顶部的距离
+ 		$(window).scroll(function () {
+ 			st = Math.max(document.body.scrollTop || document.documentElement.scrollTop);
+ 			if (st > parseInt(dv.attr('otop'))) {
+ 			if (ie6) {//IE6不支持fixed属性，所以只能靠设置position为absolute和top实现此效果
+ 				dv.css({ position: 'absolute', top: st });
+ 			}
+ 			else if (dv.css('position') != 'fixed') dv.css({ 'position': 'fixed', 'top': '15px' ,'width':'100%','margin-left':'-5.0%','z-index':'11','padding-left':'5.3%'});
+ 		} else if (dv.css('position') != 'static') dv.css({ 'position': 'static','margin':'3% 0% 1% 1%'});
  	});
- 	$(".fa-star").eq(1).click(function() {
- 		if($(".fa-star").eq(1).css("color")=="rgb(255, 0, 0)")
- 		{
- 			$(".fa-star").eq(1).css("color","#c7c7c7");
- 		}
- 		else
- 		{
- 			for(i=4;i>=1;i--)
- 				$(".fa-star").eq(i).css("color","red");
- 		}
+ 	});
+ 	*/
 
- 	});
- 	$(".fa-star").eq(0).click(function() {
- 		if($(".fa-star").eq(0).css("color")=="rgb(255, 0, 0)")
- 		{
- 			$(".fa-star").eq(0).css("color","#c7c7c7");
- 		}
- 		else
- 		{
- 			for(i=4;i>=0;i--)
- 				$(".fa-star").eq(i).css("color","red");
- 		}
- 	});
  	$(".product-one").click(function() {
+ 		var t=$(".one").offset();
  		$("html,body").animate({
- 			scrollTop:$(".one").offset().top
+ 			scrollTop:t.top+"px"
  		},10);
  	});
  	$(".product-two").click(function() {
@@ -189,5 +163,37 @@
  			scrollTop:$(".three").offset().top
  		},10);
  	});
- };
+
+
+ 	// 尾部
+    var flag = true,
+    working = false;
+
+      $("#btn").on("click", function() {
+        if (working === true) return;
+        working = true;
+        var h = $("#tail").offset().top;
+        if (flag) {
+          $("#tail").animate({
+            height: 250,
+          }, "slow", function() {
+            working = false;
+          });
+          $("body").animate({
+            scrollTop: h + 200,
+          }, "slow");
+        }
+        else {
+          $("#tail").animate({
+            height: 50,
+          }, "slow", function() {
+            working = false;
+          });
+          $("body").animate({
+            scrollTop: h - 200,
+          }, "slow");
+        }
+        flag = !flag;
+      })
+ }
 });
