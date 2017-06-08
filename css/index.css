@@ -346,3 +346,59 @@ html, body {
 .fn-inherit-height {
 	height: 100%;
 }
+
+.fn-ht {
+	height: 50px;
+}
+
+.fn-li-icon {
+	width: 50px;
+	line-height: 50px;
+}
+
+.fn-img-autofit {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.fn-itemone {
+	top: 0;
+	left: 0;
+}
+
+.fn-itemtwo {
+	top: -100%;
+	left: 100%;
+}
+
+.fn-itemthree {
+	top: -200%;
+	left: 200%;
+}
+
+.fn-img-cover {
+	object-fit: cover;
+}
+
+.fn-font-white {
+	color: white;
+}
+
+.fn-background-green {
+	background-color: #04a90f;
+}
+
+.fn-background-blue {
+	background-color: #0279d7;
+}
+
+.fn-font-c-top {
+	font-size: 40px;
+	width: 80%;
+}
+
+.fn-font-c-bottom {
+	font-size: 30px;
+	width: 80%;
+}

@@ -4,10 +4,10 @@
  * @date    2017-05-25 22:11:40
  * @version $Id$
  */
- $("#img_show_two").hide();
- $("#img_show_three").hide();
+
  $(document).ready(function(){
- 	
+ 	$("#img_show_two").hide();
+  $("#img_show_three").hide();
  	$(init)
  	function init()
  	{
@@ -82,7 +82,7 @@
  	}) ;
  	$("#reduce").click(function() {
  		var num=document.getElementById("amount");
- 		if(num.value==0)
+ 		if(0==num.value)
  			num.value=0;
  		else 
  			num.value=parseInt(num.value) - 1;
