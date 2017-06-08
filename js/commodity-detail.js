@@ -6,20 +6,6 @@ function init() {
       var slidery=$(window).scrollTop();
       var ret = Math.max(50 - slidery, 0)
       $(".introduction-line").css({"top": ret});
-      /*
-       var slidery=$(window).scrollTop();
-      if(slidery>50)
-      {
-        $("#header").hide();
-        $(".introduction-line").css({"top":"0","position":"fixed"});
-
-      }
-      else 
-      {
-        $("#header").show();
-        $(".introduction-line").css({"top":"50px","position":"fixed"});
-      }
-      */
     })
     // 具体产品单分类栏点击回到顶部
     var timer = null;
@@ -167,30 +153,30 @@ function init() {
     var flag = true,
     working = false;
 
-      $("#btn").on("click", function() {
-        if (working === true) return;
-        working = true;
-        var h = $("#tail").offset().top;
-        if (flag) {
-          $("#tail").animate({
-            height: 250,
-          }, "slow", function() {
-            working = false;
-          });
-          $("body").animate({
-            scrollTop: h + 200,
-          }, "slow");
-        }
-        else {
-          $("#tail").animate({
-            height: 50,
-          }, "slow", function() {
-            working = false;
-          });
-          $("body").animate({
-            scrollTop: h - 200,
-          }, "slow");
-        }
-        flag = !flag;
-      })
+    $("#btn").on("click", function() {
+      if (working === true) return;
+      working = true;
+      var h = $("#tail").offset().top;
+      if (flag) {
+        $("#tail").animate({
+          height: 250,
+        }, "slow", function() {
+          working = false;
+        });
+        $("body").animate({
+          scrollTop: h + 200,
+        }, "slow");
+      }
+      else {
+        $("#tail").animate({
+          height: 50,
+        }, "slow", function() {
+          working = false;
+        });
+        $("body").animate({
+          scrollTop: h - 200,
+        }, "slow");
+      }
+      flag = !flag;
+    })
 }
