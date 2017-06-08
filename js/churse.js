@@ -6,194 +6,162 @@
  */
 
  $(document).ready(function(){
- 	$("#img_show_two").hide();
-  $("#img_show_three").hide();
- 	$(init)
- 	function init()
- 	{
+ 	$("#QS-27-51-B-show").hide();
+  $("#QS-27-51-C-show").hide();
+  $(init)
+  function init()
+  {
+    $("#galvanized").click(function() {
+     $(".chosen").css("border","1px solid #c7c7c7");
+     $(this).css("border","1.5px solid #3a9cd7");
+    });
+    $("#steel").click(function() {
 
- 	//$("#img_show_two").hide();
- 	//$("#img_show_three").hide();
- 	$("#img_three").css("border","0px");
- 	$("#img_two").css("border","0px");
- 	$("#img_one").css("border","2px solid #c7c7c7");
- 	$("#chosen-one").css("border","1.5px solid #3a9cd7");
- 	$("#color-one").css("border","1.5px solid #3a9cd7");
- 	$("#chosen-one").click(function() {
- 		$("#chosen-one").css("border","1.5px solid #3a9cd7");
- 		$("#chosen-two").css("border","1px solid #c7c7c7");
- 		$("#chosen-three").css("border","1px solid #c7c7c7");
- 	});
- 	$("#chosen-two").click(function() {
- 		$("#chosen-two").css("border","1.5px solid #3a9cd7");
- 		$("#chosen-one").css("border","1px solid #c7c7c7");
- 		$("#chosen-three").css("border","1px solid #c7c7c7");
- 		
- 	});
- 	$("#chosen-three").click(function() {
- 		$("#chosen-three").css("border","1.5px solid #3a9cd7");
- 		$("#chosen-two").css("border","1px solid #c7c7c7");
- 		$("#chosen-one").css("border","1px solid #c7c7c7");
- 		
- 	});
+      $(".chosen").css("border","1px solid #c7c7c7");
+      $(this).css("border","1.5px solid #3a9cd7");
+    });
+    $("#alloy").click(function() {
+     $(".chosen").css("border","1px solid #c7c7c7");
+     $(this).css("border","1.5px solid #3a9cd7");
+
+    });
 
 
- 	$("#color-one").click(function() {
- 		$("#color-one").css("border","1.5px solid #3a9cd7");
- 		$("#color-two").css("border","1px solid #c7c7c7");
- 		$("#color-three").css("border","1px solid #c7c7c7");
+    $("#QS-27-51-A").click(function() {
+      $(".type").css("border","1px solid #c7c7c7");
+      $(this).css("border","1.5px solid #3a9cd7");
 
- 		$("#img_show_one").show();
- 		$("#img_show_two").hide();
- 		$("#img_show_three").hide();
- 		$("#img_three").css("border","0px");
- 		$("#img_two").css("border","0px");
- 		$("#img_one").css("border","2px solid #c7c7c7");
- 	});
- 	$("#color-two").click(function() {
- 		$("#color-two").css("border","1.5px solid #3a9cd7");
- 		$("#color-one").css("border","1px solid #c7c7c7");
- 		$("#color-three").css("border","1px solid #c7c7c7");
+      $(".img").hide();
+      $("#QS-27-51-A-show").show();
 
- 		$("#img_show_one").hide();
- 		$("#img_show_two").show();
- 		$("#img_show_three").hide();
- 		$("#img_three").css("border","0px");
- 		$("#img_two").css("border","2px solid #c7c7c7");
- 		$("#img_one").css("border","0px");
- 		
- 	});
- 	$("#color-three").click(function() {
- 		$("#color-three").css("border","1.5px solid #3a9cd7");
- 		$("#color-two").css("border","1px solid #c7c7c7");
- 		$("#color-one").css("border","1px solid #c7c7c7");
- 		
- 		$("#img_show_one").hide();
- 		$("#img_show_two").hide();
- 		$("#img_show_three").show();
- 		$("#img_three").css("border","2px solid #c7c7c7");
- 		$("#img_two").css("border","0px");
- 		$("#img_one").css("border","0px");
- 	});
- 	
- 	$("#add").click(function() {
- 		var num=document.getElementById("amount");
- 		num.value=parseInt(num.value) + 1;
- 	}) ;
- 	$("#reduce").click(function() {
- 		var num=document.getElementById("amount");
- 		if(0==num.value)
- 			num.value=0;
- 		else 
- 			num.value=parseInt(num.value) - 1;
- 	}) ;
+      $(".img-QS-27-51").css("border","0px");
+      $("#img-QS-27-51-A").css("border","2px solid #c7c7c7");
+    });
+    $("#QS-27-51-B").click(function() {
+     $(".type").css("border","1px solid #c7c7c7");
+     $(this).css("border","1.5px solid #3a9cd7");
 
- 	$("#img_two").click(function() {
- 		$("#img_show_one").hide();
- 		$("#img_show_two").show();
- 		$("#img_show_three").hide();
- 		$("#img_three").css("border","0px");
- 		$("#img_two").css("border","2px solid #c7c7c7");
- 		$("#img_one").css("border","0px");
+     $(".img").hide();
+     $("#QS-27-51-B-show").show();
+     $(".img-QS-27-51").css("border","0px");
+     $("#img-QS-27-51-B").css("border","2px solid #c7c7c7");
 
- 		$("#color-two").css("border","1.5px solid #3a9cd7");
- 		$("#color-one").css("border","1px solid #c7c7c7");
- 		$("#color-three").css("border","1px solid #c7c7c7");
- 	}) ;
- 	$("#img_one").click(function() {
- 		$("#img_show_one").show();
- 		$("#img_show_two").hide();
- 		$("#img_show_three").hide();
- 		$("#img_three").css("border","0px");
- 		$("#img_two").css("border","0px");
- 		$("#img_one").css("border","2px solid #c7c7c7");
+    });
+    $("#QS-27-51-C").click(function() {
+     $(".type").css("border","1px solid #c7c7c7");
+     $(this).css("border","1.5px solid #3a9cd7");
 
- 		$("#color-one").css("border","1.5px solid #3a9cd7");
- 		$("#color-two").css("border","1px solid #c7c7c7");
- 		$("#color-three").css("border","1px solid #c7c7c7");
- 	}) ;
- 	$("#img_three").click(function() {
- 		$("#img_show_one").hide();
- 		$("#img_show_two").hide();
- 		$("#img_show_three").show();
- 		$("#img_three").css("border","2px solid #c7c7c7");
- 		$("#img_two").css("border","0px");
- 		$("#img_one").css("border","0px");
+     $(".img").hide();
+     $("#QS-27-51-C-show").show();
+     $(".img-QS-27-51").css("border","0px");
+     $("#img-QS-27-51-C").css("border","2px solid #c7c7c7");
+    });
 
- 		$("#color-three").css("border","1.5px solid #3a9cd7");
- 		$("#color-two").css("border","1px solid #c7c7c7");
- 		$("#color-one").css("border","1px solid #c7c7c7");
- 	}) ;
- 	$(".join-cart").click(function() {
- 		 alert("请先登录！");
- 	});
- 	$(".commont").click(function() {
- 		 alert("请先登录！");
- 	});
-  /*
- 	$(function () {
- 		var ie6 = document.all;
- 		var dv = $('.feature'), st;
- 		dv.attr('otop', dv.offset().top); //存储原来的距离顶部的距离
- 		$(window).scroll(function () {
- 			st = Math.max(document.body.scrollTop || document.documentElement.scrollTop);
- 			if (st > parseInt(dv.attr('otop'))) {
- 			if (ie6) {//IE6不支持fixed属性，所以只能靠设置position为absolute和top实现此效果
- 				dv.css({ position: 'absolute', top: st });
- 			}
- 			else if (dv.css('position') != 'fixed') dv.css({ 'position': 'fixed', 'top': '15px' ,'width':'100%','margin-left':'-5.0%','z-index':'11','padding-left':'5.3%'});
- 		} else if (dv.css('position') != 'static') dv.css({ 'position': 'static','margin':'3% 0% 1% 1%'});
- 	});
- 	});
- 	*/
+    $("#add").click(function() {
+     var num=document.getElementById("amount");
+     num.value=parseInt(num.value) + 1;
+    });
+    $("#reduce").click(function() {
+     var num=document.getElementById("amount");
+     if(0==num.value)
+      num.value=0;
+     else 
+      num.value=parseInt(num.value) - 1;
+    });
 
- 	$(".product-one").click(function() {
- 		var t=$(".one").offset();
- 		$("html,body").animate({
- 			scrollTop:t.top+"px"
- 		},10);
- 	});
- 	$(".product-two").click(function() {
- 		$("html,body").animate({
- 			scrollTop:$(".two").offset().top
- 		},10);
- 	});
- 	$(".product-three").click(function() {
- 		$("html,body").animate({
- 			scrollTop:$(".three").offset().top
- 		},10);
- 	});
+    $("#img-QS-27-51-B").click(function() {
+      $(".img").hide();
+      $("#QS-27-51-B-show").show();
+      $(".img-QS-27-51").css("border","0px");
+      $(this).css("border","2px solid #c7c7c7");
 
+      $(".type").css("border","1px solid #c7c7c7");
+      $("#QS-27-51-B").css("border","1.5px solid #3a9cd7");
+    });
+    $("#img-QS-27-51-A").click(function() {
+     $(".img").hide();
+     $("#QS-27-51-A-show").show();
+     $(".img-QS-27-51").css("border","0px");
+     $(this).css("border","2px solid #c7c7c7");
 
- 	// 尾部
+     $(".type").css("border","1px solid #c7c7c7");
+     $("#QS-27-51-A").css("border","1.5px solid #3a9cd7");
+    });
+    $("#img-QS-27-51-C").click(function() {
+     $(".img").hide();
+     $("#QS-27-51-C-show").show();
+     $(".img-QS-27-51").css("border","0px");
+     $(this).css("border","2px solid #c7c7c7");
+
+     $(".type").css("border","1px solid #c7c7c7");
+     $("#QS-27-51-C").css("border","1.5px solid #3a9cd7");
+    });
+    $(".join-cart").click(function() {
+      alert("请先登录！");
+    });
+    $(".commont").click(function() {
+      alert("请先登录！");
+    });
+
+    $(function () {
+      //var ie6 = document.all;
+      var dv = $('.feature'), st;
+    dv.attr('otop', dv.offset().top); //存储原来的距离顶部的距离
+    $(window).scroll(function () {
+      st = Math.max(document.body.scrollTop || document.documentElement.scrollTop);
+      if (st > parseInt(dv.attr('otop'))) {
+       if (dv.css('position') != 'fixed')
+        dv.css({ 'position': 'fixed', 'top': '15px' ,'width':'100%','margin-left':'-5.0%','z-index':'11','padding-left':'5.3%'});} 
+      else if (dv.css('position') != 'static')
+        dv.css({ 'position': 'static','margin':'3% 0% 1% 1%'});
+      });
+    });
+
+    $("#manufactor-click").click(function (){  
+      $("html,body").animate({  
+        scrollTop: $("#img-manufactor").offset().top-60 
+      }, 200); 
+    }); 
+    $("#evaluation-click").click(function (){  
+      $("html,body").animate({  
+        scrollTop: $("#evaluation").offset().top-80  
+      }, 200); 
+    }); 
+    $("#service-click").click(function (){  
+      $("html,body").animate({  
+        scrollTop: $("#service").offset().top-100  
+      }, 200); 
+    }); 
+    
+
     var flag = true,
     working = false;
 
-      $("#btn").on("click", function() {
-        if (working === true) return;
-        working = true;
-        var h = $("#tail").offset().top;
-        if (flag) {
-          $("#tail").animate({
-            height: 250,
-          }, "slow", function() {
-            working = false;
-          });
-          $("body").animate({
-            scrollTop: h + 200,
-          }, "slow");
-        }
-        else {
-          $("#tail").animate({
-            height: 50,
-          }, "slow", function() {
-            working = false;
-          });
-          $("body").animate({
-            scrollTop: h - 200,
-          }, "slow");
-        }
-        flag = !flag;
-      })
- }
+    $("#btn").on("click", function() {
+      if (working === true) return;
+      working = true;
+      var h = $("#tail").offset().top;
+      if (flag) {
+        $("#tail").animate({
+          height: 250,
+        }, "slow", function() {
+          working = false;
+        });
+        $("body").animate({
+          scrollTop: h + 200,
+        }, "slow");
+      }
+      else {
+        $("#tail").animate({
+          height: 50,
+        }, "slow", function() {
+          working = false;
+        });
+        $("body").animate({
+          scrollTop: h - 200,
+        }, "slow");
+      }
+      flag = !flag;
+    })
+  }
 });
