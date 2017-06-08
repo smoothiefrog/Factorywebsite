@@ -27,8 +27,20 @@ var flag = true,
 			}
 			flag = !flag;
 		})
-		var index = 0;
-		var animating = false;
+		var index = 0,
+			animating = false,
+			resized = false;
+		function Init() {
+			if (wid == $(window).width()) return;
+			wid = $(window).width();
+			var width = $(".ui-items").width();
+			var posleft = 0;
+			$(".ui-item").each(function() {
+				$(this).css("left", posleft);
+				posleft += width;
+			});
+			index = 0;
+		}
 		$.fn.extend({
 			do: function(dis) {
 				var newleft = $(this).offset().left + dis - $(this).parent().offset().left;
@@ -36,6 +48,10 @@ var flag = true,
 					left: newleft,
 				}, "slow", function() {
 					animating = false;
+					if (resized) {
+						resized = false;
+						Init();
+					}
 				});
 			}
 		})
@@ -74,17 +90,13 @@ var flag = true,
 			if (index == 0) Init();
 		}
 		var wid = $(window).width();
-		function Init() {
-			if (wid == $(window).width()) return;
-			wid = $(window).width();
-			var width = $(".ui-items").width();
-			var posleft = 0;
-			$(".ui-item").each(function() {
-				$(this).css("left", posleft);
-				posleft += width;
-			});
-			index = 0;
-		}
-		$(window).resize(Init);
+		$(window).resize(function() {
+			if (animating) {
+				resized = true;
+			}
+			else {
+				Init();
+			}
+		});
 		setInterval(animate, 5000);
 	})
