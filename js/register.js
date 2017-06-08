@@ -1,11 +1,4 @@
-/**
- * 
- * @authors Your Name (you@example.org)
- * @date    2017-05-25 22:11:40
- * @version $Id$
- */
- //定义画布宽高和生成点的个数
- var canvas = document.getElementById("canvas");
+var canvas = document.getElementById("canvas");
  //var WIDTH = window.innerWidth, HEIGHT = window.innerHeight, POINT = 30;
 
 var browser = {
