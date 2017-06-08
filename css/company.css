@@ -2,12 +2,13 @@
 	font-family: "Comic Sans MS";
 }
 
-a:hover{
-	text-decoration: none;
+a:hover {
+    text-decoration: none;
 }
 #header {
 	border-width: 0 0 1px 0;
 	border-style: solid;
+	padding: 0 2% 0 2%;
 }
 
 .ui-header {
@@ -15,6 +16,13 @@ a:hover{
 }
 .fn-font-gray {
 	color: #676767;
+}
+.logoheight{
+	height: 50px;
+}
+.font-style{
+	width: 50px;
+	line-height: 50px;
 }
 .ui-search {
 	float: left;

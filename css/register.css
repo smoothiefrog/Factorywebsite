@@ -6,6 +6,10 @@
 	border-width: 0 0 1px 0;
 	border-style: solid;
 }
+
+.logoheight{
+	height: 50px;
+}
 .ui-header {
 	padding-right: 20px;
 }
