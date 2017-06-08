@@ -6,6 +6,29 @@
  */
 
  $(document).ready(function(){
+  $(".ui-QR-code").hide();
+  var MouseEvent = function(e) {
+    this.x = e.pageX;
+    this.y = e.pageY;
+  }
+  var Mouse = function(e){
+    var mouse = new MouseEvent(e);
+    return {
+      leftpos : mouse.x - 38,
+      toppos : mouse.y - 115,
+    }
+  }
+  $(".fn-background-green").mousemove(function(e) {
+    var p = Mouse(e);
+    $(".ui-QR-code").css({top: p.toppos,left: p.leftpos});
+  });
+  $(".fn-background-green").hover(
+    function(e){
+      $(".ui-QR-code").fadeIn(200);
+    },function(){
+      $(".ui-QR-code").fadeOut(200);
+    }
+  )
  	$("#QS-27-51-B-show").hide();
   $("#QS-27-51-C-show").hide();
   $(init)
@@ -112,7 +135,7 @@
       st = Math.max(document.body.scrollTop || document.$(".feature").scrollTop);
       if (st > parseInt(dv.attr('otop'))) {
        if (dv.css('position') != 'fixed')
-        dv.css({ 'position': 'fixed', 'top': '15px' ,'width':'100%','margin-left':'-5.0%','z-index':'11','padding-left':'5.3%'});} 
+        dv.css({ 'position': 'fixed', 'top': '11px' ,'width':'100%','margin-left':'-5.0%','z-index':'11','padding-left':'5.3%'});} 
       else if (dv.css('position') != 'static')
         dv.css({ 'position': 'static','margin':'3% 0% 1% 1%'});
       });

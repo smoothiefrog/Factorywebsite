@@ -1,5 +1,28 @@
 $(init) 
 function init() {  
+    $(".ui-QR-code").hide();
+    var MouseEvent = function(e) {
+      this.x = e.pageX;
+      this.y = e.pageY;
+    }
+    var Mouse = function(e){
+      var mouse = new MouseEvent(e);
+      return {
+        leftpos : mouse.x - 38,
+        toppos : mouse.y - 115,
+      }
+    }
+    $(".span-of-wechat").mousemove(function(e) {
+      var p = Mouse(e);
+      $(".ui-QR-code").css({top: p.toppos,left: p.leftpos});
+    });
+    $(".span-of-wechat").hover(
+      function(e){
+        $(".ui-QR-code").fadeIn(200);
+      },function(){
+        $(".ui-QR-code").fadeOut(200);
+      }
+    )
   	// 具体产品单分类栏效果
     pos = 1; 
     $(window).scroll(function(){

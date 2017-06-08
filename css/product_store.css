@@ -15,6 +15,10 @@
 	line-height: 50px;
 }
 
+.logoheight{
+	height: 50px;
+}
+
 .ui-search {
 	float: left;
 	margin-top: 6px;
@@ -349,33 +353,30 @@ a:hover {
 
 
 /*适应不同大小的屏幕——992px*/
-@media(max-width: 992px){ 
-	.fixed_title-right  {
+@media(max-width: 992px) { 
+	.fixed_title-right {
 		opacity: 0;
 		margin-left: 10%;
 	}
-	.fixed_title-left{
+	.fixed_title-left {
 		font-size: 18px;
 	}
-	.body-newProduct-title{
+	.body-newProduct-title {
 		font-size: 20px;
 	}
 }
 	
 /*适应不同大小的屏幕——870px*/
-@media(max-width: 870px){
+@media(max-width: 870px) {
 	/*滑动图区——适应手机端*/
-	.head-left  {
+	.head-left {
 		display: none;
 	}
-	.head-right{
+	.head-right {
 		width: 100%;
 		height: 300px;
 	}
-	#bootstrap-touch-slider{
-		height: 300px;
-	}
-	.head{
+	#bootstrap-touch-slider,.head{
 		height: 300px;
 	}
 	.slide-head{
@@ -389,31 +390,25 @@ a:hover {
 		width: 23%;
 	}
 	.body-newProduct-content h3{
-	font-size: 19px;
+		font-size: 19px;
     }
     .body-newProduct-content p{
-	font-size: 10px;
+		font-size: 10px;
     }
    .body-newProduct-picture{
-	height: 120px;
+		height: 120px;
     }
    .body-newProduct-price{
-	font-size: 12px;
+		font-size: 12px;
     }
-   .body-newProduct-price span{
-	font-size: 16px;
+   .body-newProduct-price span,.body-starProduct-body-col2 h4{
+		font-size: 16px;
     }
    /*产品系列自适应*/
     .body-starProduct-body-col1{
-   	display: none;
+   		display: none;
     }
-    .body-starProduct-body-col2 p{
-	font-size: 1px;
-	}
-	.body-starProduct-body-col2 h4{
-		font-size: 16px;
-	}
-	.body-starProduct-body-col2 h5{
+    .body-starProduct-body-col2 p,.body-starProduct-body-col2 h5{
 		font-size: 1px;
 	}
 	.body-starProduct-body-col2 p span{
@@ -450,19 +445,19 @@ a:hover {
 		width: 30%;
 	}
 	.body-newProduct-content h3{
-	font-size: 19px;
+		font-size: 19px;
     }
     .body-newProduct-content p{
-	font-size: 10px;
+		font-size: 10px;
     }
    .body-newProduct-picture{
-	height: 120px;
+		height: 120px;
     }
    .body-newProduct-price{
-	font-size: 12px;
+		font-size: 12px;
     }
    .body-newProduct-price span{
-	font-size: 16px;
+		font-size: 16px;
    }
 }
 
@@ -493,30 +488,27 @@ a:hover {
 		width: 47%;
 	}
 	.body-newProduct-content h3{
-	font-size: 19px;
+		font-size: 19px;
     }
     .body-newProduct-content p{
-	font-size: 10px;
+		font-size: 10px;
     }
    .body-newProduct-picture{
-	height: 90px;
+		height: 90px;
     }
    .body-newProduct-price{
-	font-size: 12px;
+		font-size: 12px;
     }
    .body-newProduct-price span{
-	font-size: 16px;
+		font-size: 16px;
    }
    /*活动区自适应*/
    .body-activity-part{
-	width: 49%;
+		width: 49%;
    }
-   .body-activity h5{
-	display: none;
-    }
    .body-activity p{
-	margin-top: 10px;
-	color: black;
+		margin-top: 10px;
+		color: black;
    }
    /*产品系列自适应*/
    .body{
@@ -528,16 +520,13 @@ a:hover {
 	.body-starProduct-title{
 		font-size: 17px;
 	}
-	.body-starProduct-body{
-		height: 200px;
-	}
-	.body-starProduct-body-col2{
+	.body-starProduct-body,.body-starProduct-body-col2{
 		height: 200px;
 	}
 	.body-starProduct-body-col2 h4{
 		font-size: 16px;
 	}
-	.body-starProduct-body-col2 h5{
+	.body-starProduct-body-col2 h5,.body-activity h5{
 		display: none;
 	}
 	.body-starProduct-body-col2 img{
@@ -555,4 +544,31 @@ a:hover {
 		height: 25px;
 		font-size: 15px;
 	}
-	}
+}
+.ui-QR-code {
+	position: absolute;
+	width: 74px;
+	height: 75px;
+	background: #f8c301;
+	border-radius: 5px;
+	margin:30px auto 0;
+}
+
+.ui-QR-code .fn-QR-code-arrow {
+	position: absolute;
+	top: 75px;
+	left: 30px;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	border-style: solid;
+	border-width: 8px 8px 0 8px;
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #f8c301;
+}
+
+.ui-QR-code-img {
+	margin: 2px 0 0 2px;
+	width: 70px;
+	height: 70px;
+}

@@ -119,7 +119,7 @@ $(document).ready(function() {
 			$(".ui-QR-code").fadeIn(200);
 		},function(){
 			$(".ui-QR-code").fadeOut(200);
-    	}
-    )
+		}
+	)
 	setInterval(animate, 5000);
 })

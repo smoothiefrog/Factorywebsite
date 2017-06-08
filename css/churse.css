@@ -400,3 +400,42 @@ a:link, a:visited, a:hover, a:active{
 	text-decoration: underline;
 	cursor: pointer;
 }
+.fn-font-white {
+	color: white;
+}
+
+.fn-background-green {
+	background-color: #04a90f;
+}
+
+.fn-background-blue {
+	background-color: #0279d7;
+}
+
+.ui-QR-code {
+	position: absolute;
+	width: 74px;
+	height: 75px;
+	background: #f8c301;
+	border-radius: 5px;
+	margin:30px auto 0;
+}
+
+.ui-QR-code .fn-QR-code-arrow {
+	position: absolute;
+	top: 75px;
+	left: 30px;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	border-style: solid;
+	border-width: 8px 8px 0 8px;
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #f8c301;
+}
+
+.ui-QR-code-img {
+	margin: 2px 0 0 2px;
+	width: 70px;
+	height: 70px;
+}

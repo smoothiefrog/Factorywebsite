@@ -116,7 +116,7 @@ a:hover{
 	margin-left: 40px;
 }
 @media (max-width: 980px) {
-	.ui-main-imf{
+	.ui-main-imf {
 		height: 320px;
 	}
 	.ui-main-imf-eve {
