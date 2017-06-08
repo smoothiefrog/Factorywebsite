@@ -1,5 +1,8 @@
 var flag = true,
-	working = false;
+	working = false,
+	index = 0,
+	animating = false,
+	resized = false;
 $(document).ready(function() {
 	$("#btn").on("click", function() {
 		if (working === true) return;
@@ -27,9 +30,6 @@ $(document).ready(function() {
 		}
 		flag = !flag;
 	})
-	var index = 0,
-		animating = false,
-		resized = false;
 	function Init() {
 		if (wid == $(window).width()) return;
 		wid = $(window).width();
@@ -104,7 +104,6 @@ $(document).ready(function() {
 		this.y = e.pageY;
 	}
 	var Mouse = function(e){
-		var kdheight = jQuery(document).scrollTop();
 		var mouse = new MouseEvent(e);
 		return {
 			leftpos : mouse.x - 38,
