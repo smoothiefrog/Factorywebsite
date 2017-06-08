@@ -127,6 +127,11 @@
         scrollTop: $("#evaluation").offset().top-80  
       }, 200); 
     }); 
+    $("#commont").click(function (){  
+      $("html,body").animate({  
+        scrollTop: $("#evaluation").offset().top-180  
+      }, 200); 
+    }); 
     $("#service-click").click(function (){  
       $("html,body").animate({  
         scrollTop: $("#service").offset().top-100  
